@@ -38,6 +38,7 @@ function dado(nombreTirador){
     }
 }
 
+
 //Generar un pototipo
 
 function Persona(nombrecompleto, edad){
