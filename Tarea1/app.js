@@ -32,11 +32,9 @@ function precioconImpuesto(precio){
 //Hacer un closure
 
 function dado(nombreTirador){
-    var resp = 'tiró un dado y salió';
-    return function(numeroDado){
-        return nombreTirador + ' ' + resp + ' ' + numeroDado;
-    }
-}
+    var numero = Math.floor(Math.random() * 6) + 1
+    return nombreTirador + 'tiró un dado y salió' + numero;
+  }
 
 
 //Generar un pototipo
