@@ -33,7 +33,7 @@ function precioconImpuesto(precio){
 
 function dado(nombreTirador){
     var numero = Math.floor(Math.random() * 6) + 1
-    return nombreTirador + 'tiró un dado y salió' + numero;
+    return nombreTirador + 'tiró un dado y salió' + ' ' + numero;
   }
 
 
@@ -49,12 +49,14 @@ Persona.prototype.obtenerNombreEdad = function(){
 var persona1 = new Persona('MarceloDiaz', 30);
 
 Persona.prototype.guardarEnLocalStorage = function(){
-    localStorage.setItem(this.nombrecompleto,this.edad);
+    localStorage.setItem('nombre',this.nombrecompleto);
+    localStorage.setItem('edad',this.edad);
     return true;
 }
 
 Persona.prototype.guardarEnSessionStorage = function(){
-    sessionStorage.setItem(this.nombrecompleto,this.edad);
+    sessionStorage.setItem('nombre',this.nombrecompleto);
+    sessionStorage.setItem('edad',this.edad);
     return true;
 }
 
